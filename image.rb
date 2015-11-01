@@ -31,8 +31,7 @@ def recursive_fill(image,x,y)
 	recursive_fill(image,x,y-1)
 end
 
-def find_and_fill_connected_component(image)
-	found_x = found_y = nil
+def find_and_fill_connected_component(image)	
 	for i in (0...image.rows)
 		for j in (0...image.columns)
 			if isBlack?(pixel_at(image,j,i))				
